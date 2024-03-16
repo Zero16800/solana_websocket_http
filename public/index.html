@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana 账户信息</title>
+</head>
+
+<body>
+  <div class="content">
+    
+    <h1>Solana 【获取账户、订阅、余额、区块】</h1>
+
+    <h1>账户余额: <span id="accountInfobalance">Loading...</span></h1>
+    <h1>当前区块: <span id="accountInfocurrentBlock">Loading...</span></h1>
+
+    <h1><span id="accountInfo">最新余额: Loading...</span></h1>
+    
+    <div style="display: flex; align-items: center;">
+      <input class="form-control" type="text" id="accountInput" placeholder="请输入 Solana 账户地址" style="width: 420px; margin-right: 1px;">
+      <button class="btn btn-primary" id="subscribeButton">获取当前余额 & 订阅账户</button>
+  </div>
+  
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
